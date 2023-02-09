@@ -1,0 +1,30 @@
+<section>
+    <h1>ADD USER</h1>
+
+    <form [formGroup]="createUser">
+        <div class="input-data">
+            <input type="text" placeholder="First Name" formControlName="fName" required>
+        </div>
+        <div class="input-data">
+            <input type="text" placeholder="Last Name" formControlName="lName" required>
+        </div>
+        <div class="input-data">
+            <input type="number" placeholder="876-XXX-XXXX" formControlName="tele" required>
+        </div>
+        <div class="input-data">
+            <input type="text" placeholder="Alias" formControlName="alias" required>
+        </div>
+        <div class="input-data">
+            <input type="email" placeholder="jack@gmail.com" formControlName="email" required>
+        </div>
+        <div class="input-data">
+            <input type="date" formControlName="dob" required>
+        </div>
+       <button class="submit" (click)="newUser()">Submit</button>
+
+    </form>
+</section>
+
+<div class="home" routerLink="/" routerLinkActive="active">
+    <i class="fa-solid fa-house"></i>
+</div>
